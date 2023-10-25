@@ -2,17 +2,7 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: this template provision our dev network environment
 Metadata: {}
 
-Parameters: 
-# dEV vpc PARAMETERS
-  DevVPCCidrBlockPara:
-    Description: please provided your dev vpc cidrBlock
-    Type: String
-    Default: 10.0.0.0/16
-
-  DevVPCEnableDnsSupportPara:
-    Description: 
-    Type: String|Number|CommaDelimitedList
-    Default: -
+Parameters: {}
 
 Mappings: {}
 
@@ -23,7 +13,7 @@ Resources:
   DevVPC:
     Type: AWS::EC2::VPC
     Properties:
-      CidrBlock: !Ref DevVPCCidrBlockPara
+      CidrBlock: 10.0.0.0/16
       EnableDnsSupport: true
       Tags:
         - Key: Name
