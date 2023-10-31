@@ -88,6 +88,4 @@ Resources:
         - Key: Name
           Value: DevDBserverSubnet             
 
-
-
 Outputs: {}
